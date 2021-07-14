@@ -20,9 +20,9 @@ class Car:
         return f"The price: {self.price}."
 
 audi_q7 = Car(
-    model="Audi Q7", 
+    model ="Audi Q7", 
     year = 2015, 
-    engine= "Diesel 3.0L", 
+    engine = "Diesel 3.0L", 
     color = "black", 
     price = 55000)
 
@@ -62,7 +62,7 @@ class Book:
 
 harry_potter = Book(
         name = "Harry Potter and the Chamber of Secrets",
-        year=1998,
+        year = 1998,
         author = "J. K. Rowling",
         genre = "fantasy",
         price = 100)
