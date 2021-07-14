@@ -63,16 +63,16 @@ class Book:
 harry_potter = Book(
         name = "Harry Potter and the Chamber of Secrets",
         year=1998,
-        author="J. K. Rowling",
-        genre="fantasy",
+        author = "J. K. Rowling",
+        genre = "fantasy",
         price = 100)
 book_thief = Book(
         name = "The Book Thief",
-        year=2005,
-        author="Markus Zusak",
-        genre="military, drama",
-        price=90,
-        availability=False)
+        year = 2005,
+        author = "Markus Zusak",
+        genre = "military, drama",
+        price = 90,
+        availability = False)
 
 print(harry_potter.get_author())
 print(harry_potter.get_year())
@@ -108,9 +108,9 @@ class Stadium:
 dnipro_arena = Stadium(
     name = "Dnipro Arena",
     date = "14.09.2008",
-    country="Ukraine",
-    city="Dnipro",
-    capacity=34000)
+    country = "Ukraine",
+    city = "Dnipro",
+    capacity = 34000)
 
 print(dnipro_arena.get_name())
 print(dnipro_arena.get_date())
