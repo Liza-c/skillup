@@ -11,22 +11,20 @@ class Car:
         self.price = price
    
     def get_name(self):
-        return f"This is {self.model}"
+        return f"This is {self.model}."
 
     def get_parameters(self):
-        return f"This car is {self.year}, engine size: {self.engine}, car color: {self.color}"
+        return f"This car is {self.year}, engine size: {self.engine}, car color: {self.color}."
     
     def get_price(self):
-        return f"The price: {self.price}"
-
+        return f"The price: {self.price}."
 
 audi_q7 = Car(
     model="Audi Q7", 
     year = 2015, 
     engine= "Diesel 3.0L", 
     color = "black", 
-    price = 55000
-    )
+    price = 55000)
 
 print(audi_q7.get_name())
 print(audi_q7.get_parameters())
@@ -60,7 +58,7 @@ class Book:
         if self.availability is True:
             return f"This book is in the store, its price - {self.price}."
         else:
-            print("This book is not available for sale")
+            print("This book is not available for sale.")
 
 harry_potter = Book(
         name = "Harry Potter and the Chamber of Secrets",
@@ -96,16 +94,16 @@ class Stadium:
         self.capacity = capacity
     
     def get_name(self):
-        return f"This is {self.name}"
+        return f"This is {self.name}."
 
     def get_location(self):
-        return f"This stadium is located in {self.country} in the city of {self.city}"
+        return f"This stadium is located in {self.country} in the city of {self.city}."
 
     def get_date(self):
-        return f"The opening date of the stadium is {self.date}"
+        return f"The opening date of the stadium is {self.date}."
 
     def get_capacity(self):
-        return f"Stadium capacity - {self.capacity} seats"
+        return f"Stadium capacity - {self.capacity} seats."
 
 dnipro_arena = Stadium(
     name = "Dnipro Arena",
@@ -118,8 +116,3 @@ print(dnipro_arena.get_name())
 print(dnipro_arena.get_date())
 print(dnipro_arena.get_location())
 print(dnipro_arena.get_capacity())
-
-
-
-
-
