@@ -47,13 +47,13 @@ class Cat:
     
     @property
     def check_satiety(self):
-        if self.__satiety <= 20:
+        if self.__satiety < 20:
             return "I am very hungry. I urgently need to eat! Feed me!"
-        if self.__satiety in range(20, 40):
+        if 20 <= self.__satiety < 40:
             return "I am hungry. Feed me"
-        if self.__satiety in range(40, 60):
+        if 40 <= self.__satiety < 60:
             return "I don't mind something to eat."
-        if self.__satiety in range(60, 80):
+        if 60 <= self.__satiety < 80:
             return "I'm fine. I don't think about food."
         if self.__satiety >= 80:
             return "I'm full."
