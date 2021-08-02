@@ -56,13 +56,13 @@ class AsStack(Stack):
     async def push(self, value):
         try:
             v = int(value)
-            self.add_value(v)
             if v < 50:
                 t = 1
             else:
                 t = 2
-            print(f"{self.name} = Value: {v}. Sleep: {t}")
             await asyncio.sleep(t)
+            self.add_value(v)
+            print(f"{self.name} = Value: {v}. Sleep: {t}")
         except ValueError:
             print("Wrong value.")
 
