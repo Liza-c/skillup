@@ -15,12 +15,11 @@ import time
 
 class Stack:
     def __init__(self, name) -> None:
-        #self.value = value
         self.__name = name
         self.__data = []
         
     def __repr__(self) -> str:
-        return f"{self.__name}={str(self.__data)}"
+        return f"{self.__name} = {self.__data}"
 
     @property
     def name(self):
@@ -48,7 +47,7 @@ class Stack:
             print(f"{self.__name} = Value: {v}. Sleep: {t}")
             sleep(t)
         except ValueError:
-            print("Wrong value")
+            print("Wrong value.")
 
 class AsStack(Stack):
     def __init__(self, name) -> None:
@@ -75,7 +74,6 @@ def main():
     n = 10
     count_stacks = 2
 
-    # Stack
     start_time = time.time()
     stasks = []
     for i in range(1, count_stacks + 1):
@@ -88,7 +86,6 @@ def main():
     
     print(f"--- {time.time() - start_time} seconds ---")
 
-    # StackAsync
     start_time = time.time()
     as_stacks = [AsStack(f"async_stack#{i}") for i in range(1, count_stacks + 1)]
     tasks = [asrack.push(i) for asrack in as_stacks for i in generator(n)]
