@@ -27,16 +27,21 @@ class List:
         print(f"Среднее арифметическое: {self.num_avg}")
     
 def main():
-    rl = List()
+    list_1 = List()
 
-    t1 = Thread(target=rl.rand_list())
-    t2 = Thread(target=rl.sum_list())
-    t3 = Thread(target=rl.avg())
+    thread_1 = Thread(target=list_1.rand_list())
+    thread_2 = Thread(target=list_1.sum_list())
+    thread_3 = Thread(target=list_1.avg())
 
-    t1.start()
-    t1.join()
-    t2.start()
-    t3.start()
+    thread_1.start()
+    print(f"thread status: {thread_1.is_alive()}")
+    sleep(5)
+    print(f"thread status: {thread_1.is_alive()}")
+    thread_1.join()
+    print(f"thread status: {thread_1.is_alive()}")
+    thread_2.start()
+    thread_3.start()
+
 
 if __name__ == "__main__":
     main()
